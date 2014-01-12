@@ -32,7 +32,7 @@ BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires:	%{name}-common = %{version}-%{release}
-Requires:	libmate >= 1.1.0
+Requires:	libmate-libs >= 1.1.0
 Requires:	python-pygobject >= 2.17.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -79,9 +79,8 @@ Summary(pl.UTF-8):	Wiązania Pythona do biblioteki interfejsu użytkownika MateC
 Group:		Libraries/Python
 Requires:	%{name}-canvas = %{version}-%{release}
 Requires:	%{name}-component = %{version}-%{release}
-Requires:	libmate >= 1.1.0
+Requires:	libmate-libs >= 1.1.0
 Requires:	libmatecomponentui >= 1.1.0
-Requires:	python-matecorba >= 1.1.0
 Requires:	python-pygobject >= 2.17.0
 Requires:	python-pygtk-gtk >= 2:2.10.3
 
@@ -112,7 +111,6 @@ Group:		Libraries/Python
 Requires:	%{name}-canvas = %{version}-%{release}
 Requires:	%{name}-component-ui = %{version}-%{release}
 Requires:	libmateui >= 1.1.0
-Requires:	python-matecorba >= 1.1.0
 Requires:	python-pygobject >= 2.17.0
 Requires:	python-pygtk-gtk >= 2:2.10.3
 
@@ -156,7 +154,7 @@ Pliki wspólne wiązań Pythona do MATE.
 %package devel
 Summary:	Development files for Python MATE bindings
 Summary(pl.UTF-8):	Pliki programistyczne wiązań Pythona do MATE
-Group:		Libraries/Python
+Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-canvas = %{version}-%{release}
 Requires:	%{name}-component = %{version}-%{release}
