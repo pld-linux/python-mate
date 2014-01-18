@@ -1,3 +1,4 @@
+# NOTE: it's deprecated package, a binding for MATE <= 1.4 APIs
 Summary:	MATE bindings for Python
 Summary(pl.UTF-8):	Wiązania Pythona do bibliotek MATE
 Name:		python-mate
